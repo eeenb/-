@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* styles.css */
+
+/* 通用字体和背景 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+/* 链接样式 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 表单元素样式 */
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+/* 表格样式 */
+/* 设置表格的最大宽度并居中显示 */
+table {
+    max-width: 900px; /* 例如，您可以设置为760px或任何适合您设计的宽度 */
+    margin: 0 auto; /* 上下为0，左右自动，实现居中 */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* 为表格单元格和表头设置适当的填充和文字对齐 */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* 修改表头样式 */
+th {
+    background-color: #4CAF50; /* 您已经设置的背景颜色 */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #333;
+}
+
+/* 限制搜索按钮宽度并居中表单 */
+form {
+    text-align: center; /* 使表单内容居中 */
+}
+
+input[type="submit"] {
+    width: auto; /* 按钮宽度自适应内容，不再占满整行 */
+    padding: 5px 15px; /* 按钮内部填充 */
+    /* 其他样式保持不变 */
+}
+
+
+/* 页面内容区域 */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}

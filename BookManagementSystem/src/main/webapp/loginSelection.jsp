@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Selection</title>
+    <style>
+body {
+    background-image: url('/BookManagementSystem/图书馆.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: fit-content; /* This will make the width to fit its content */
+    margin: auto; /* This will center the container */
+}
+
+.login-option {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.login-option:hover {
+    background: #0056b3;
+}
+
+h1 {
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>图书管理系统</h1>
+       <a href="${pageContext.request.contextPath}/views/adminLogin.jsp" class="login-option">管理员登录</a>
+       <a href="${pageContext.request.contextPath}/views/userLogin.jsp" class="login-option">用户登录</a>
+
+    </div>
+</body>
+</html>
